@@ -1,7 +1,7 @@
-# Diy_Thermostat_with_Homeassistant
+# Smart Thermostat
 Diy Thermostat with Home Assistaant
 
-## Built With
+## Built By
 
 * [Home Assistant](https://home-assistant.io/) - Automation by Home Assistant
 * [Zombu2](https://github.com/zombu2/) - Hardware guru
