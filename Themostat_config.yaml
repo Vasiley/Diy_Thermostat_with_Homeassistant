@@ -1,0 +1,174 @@
+homeassistant:
+  customize:
+    sensor.fan_mode:
+      friendly_name: Fan
+      haaska_hidden: true
+      icon: mdi:fan
+
+    sensor.system_mode:
+      friendly_name: Mode
+      haaska_hidden: true
+      icon: mdi:settings
+
+    sensor.indoor_temperature:
+      friendly_name: Indoor Temp
+      haaska_hidden: true
+      icon: mdi:thermometer-lines
+
+    sensor.operation_set_point:
+      friendly_name: Setpoint
+      haaska_hidden: true
+      icon: mdi:oil-temperature
+
+    sensor.fan_on:
+      friendly_name: Fan Status
+      haaska_hidden: true
+      icon: mdi:fan
+
+    sensor.operation_mode:
+      friendly_name: Operation Mode
+      haaska_hidden: true
+      icon: mdi:air-conditioner
+
+group:
+  thermos:
+   name: thermos
+   entities:
+      - sensor.fan_mode
+      - sensor.system_mode
+      - sensor.indoor_temperature
+      - sensor.operation_set_point
+      - sensor.fan_on
+      - sensor.operation_mode
+      - input_select.heat_cool
+      - input_select.temp
+
+input_select:
+  heat_cool:
+    name: Heat Cool
+    options:
+     - HEAT
+     - COOL
+     - OFF
+    initial: COOL
+
+  temp:
+    options:
+      - '65'
+      - '66'
+      - '67'
+      - '68'
+      - '69'
+      - '70'
+      - '71'
+      - '72'
+      - '73'
+      - '74'
+      - '75'
+      - '76'
+      - '77'
+      - '78'
+      - '79'
+      - '80'
+    initial: '74'
+
+automation:
+  - alias: "Change Thermostat"
+    trigger:
+      - platform: state
+        entity_id: input_select.heat_cool
+      - platform: state
+        entity_id: input_select.temp
+    action:
+      - service: script.turn_on
+        entity_id: script.run
+
+  - alias: "Change input select of temp if Thermostat is changed manully"
+    trigger:
+      - platform: state
+        entity_id: sensor.operation_set_point
+    action:
+      - service: input_select.select_option
+        data_template:
+          entity_id: input_select.temp
+          option: '{{ states.sensor.operation_set_point.state }}'
+
+  - alias: "Change input select of mode if Thermostat is changed manully"
+    trigger:
+      - platform: state
+        entity_id: sensor.system_mode
+    action:
+      - service: input_select.select_option
+        data_template:
+          entity_id: input_select.heat_cool
+          option: '{{ states.sensor.system_mode.state }}'
+
+
+script:
+  run:
+    sequence:
+      - service: shell_command.heat_cool_select
+
+shell_command:
+  heat_cool_select: curl -d "mode={{ states.input_select.heat_cool.state }}&target={{ states.input_select.temp.state }}" -X POST http://xx.xxx.xx/system
+
+
+sensor:
+  - platform: scrape
+    resource: http://10.1.10.183/_liveUpdate
+    select: '#fanModeContainer'
+    name: Fan Mode
+    icon: mdi:fan
+
+  - platform: scrape
+    resource: http://10.1.10.183/_liveUpdate
+    select: '#systemModeContainer'
+    name: System Mode
+    icon: mdi:nest-thermostat
+
+  - platform: scrape
+    resource: http://10.1.10.183/_liveUpdate
+    select: '#indoorTempContainer'
+    name: Indoor Temperature
+    icon: mdi:thermometer
+    unit_of_measurement: °F
+
+  - platform: scrape
+    resource: http://10.1.10.183/info
+    select: '#cool'
+    name: Operation Cool
+
+  - platform: scrape
+    resource: http://10.1.10.183/info
+    select: '#heat'
+    name: Operation Heat
+
+  - platform: scrape
+    resource: http://10.1.10.183/info
+    select: '#fan'
+    name: Operation Fan
+
+  - platform: scrape
+    resource: http://10.1.10.183/_liveUpdate
+    select: '#targetTemps'
+    name: Operation Set Point
+    unit_of_measurement: °F
+
+  - platform: template
+    sensors:
+      fan_on:
+        friendly_name: "Fan Running"
+        value_template:  "{{ 'ON' if 'ON' in states.sensor.operation_fan.state | upper else 'OFF' }}"
+
+  - platform: template
+    sensors:
+      operation_mode:
+        friendly_name: "Operation Mode"
+        value_template: >-
+                      {% if states.sensor.operation_cool.state.split(':')[1] |trim | upper == 'ON' %}
+                         COOL
+                      {% elif states.sensor.operation_heat.state.split(':')[1] |trim | upper == 'ON' %}
+                         HEAT
+                      {% else %}
+                         OFF
+                      {% endif %}
