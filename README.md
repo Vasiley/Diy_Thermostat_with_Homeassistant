@@ -32,6 +32,7 @@ Table of Contents
 
                                       [Return to Top](#Smart Thermostat)
 Acknowledgments
+---------------
 
 * Hat tip to anyone who's code was used
 * Inspiration
