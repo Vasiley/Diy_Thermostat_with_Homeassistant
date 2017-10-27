@@ -16,7 +16,7 @@ Diy Thermostat with Home Assistaant for Under $70
 * [Relay's Need 3](https://www.ebay.com/itm/1Pcs-Relay-Shield-Boards-5V-For-WeMos-D1-Mini-Module-Development-Boards/122645522508?hash=item1c8e3e284c:g:jJ0AAOSwyBhZjwpz) - Used for switching Heat/Cool/Fan
 
 ![Pi3b](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/pi3b.jpg)
-
+![5inchTouchScreen](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/lcdscreen.jpg)
 
 ## Acknowledgments
 
