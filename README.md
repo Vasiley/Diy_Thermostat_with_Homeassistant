@@ -25,4 +25,4 @@ Diy Thermostat with Home Assistaant for Under $70
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* etc and etc
+
