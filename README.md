@@ -1,5 +1,5 @@
 # Smart Thermostat
-------------------
+
 Diy Thermostat with Home Assistaant for Under $70
 
 Table of Contents
@@ -10,7 +10,7 @@ Table of Contents
   * [Acknowledgments](#acknowledgments)
   
 ## Built By
------------
+
 
 * [Home Assistant](https://home-assistant.io/) - Automation by Home Assistant
 * [Zombu2](https://github.com/zombu2/) - Hardware guru
@@ -19,7 +19,7 @@ Table of Contents
    * [Return to Top](#smart-thermostat)
 
 ## Built With
--------------
+
 
 * [Rasperry Pi3b](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) - Rasberry Pi3b
 * [Lcd TouchScreen](https://www.amazon.com/gp/product/B013JECYF2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1) - 5" Lcd Touchscreen
@@ -35,8 +35,8 @@ Table of Contents
 
    * [Return to Top](#smart-thermostat)
 
-Acknowledgments
----------------
+### Acknowledgments
+
 
 * Hat tip to anyone who's code was used
 * Inspiration
