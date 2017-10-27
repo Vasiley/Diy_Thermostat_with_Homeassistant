@@ -6,7 +6,7 @@ Table of Contents
 
   * [Built By](#Built By)
   * [Built With](#Built With)
-  * [Acknowledgments](#Acknowledgments)
+  * [Acknowledgments](#acknowledgments)
   
 ## Built By
 
