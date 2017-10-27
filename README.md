@@ -10,6 +10,7 @@ Diy Thermostat with Home Assistaant
 ## Built With
 
 * [Rasperry Pi3b](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) - Rasberry Pi3b
++![Pi] `/root/.thermostat/pi3b.jpg'
 
 
 ## Acknowledgments
