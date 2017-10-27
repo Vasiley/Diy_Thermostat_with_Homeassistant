@@ -31,7 +31,7 @@ Table of Contents
 ![Relay](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/relays.jpg)
 
                                       [Return to Top](#Smart Thermostat)
-## Acknowledgments
+Acknowledgments
 
 * Hat tip to anyone who's code was used
 * Inspiration
