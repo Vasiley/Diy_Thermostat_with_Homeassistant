@@ -1,6 +1,6 @@
 # Smart Thermostat
 
-Diy Thermostat with Home Assistaant for Under $70
+Diy Thermostat with Home Assistaant for Under $70 This is a overview Please see wiki link below for more details
 
 Table of Contents
 -----------------
@@ -8,6 +8,9 @@ Table of Contents
   * [Built By](#built-by)
   * [Built With](#built-with)
   * [Acknowledgments](#acknowledgments)
+  * [Wiki](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/wiki)
+
+ 
   
 ## Built By
 
