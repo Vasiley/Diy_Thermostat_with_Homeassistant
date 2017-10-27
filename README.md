@@ -4,8 +4,8 @@ Diy Thermostat with Home Assistaant for Under $70
 Table of Contents
 -----------------
 
-  * [Built By](#Built By)
-  * [Built With](#Built With)
+  * [Built By](#built_by)
+  * [Built With](#built_with)
   * [Acknowledgments](#acknowledgments)
   
 ## Built By
@@ -14,7 +14,7 @@ Table of Contents
 * [Zombu2](https://github.com/zombu2/) - Hardware guru
 * [mholgatem](https://github.com/mholgatem/ThermOS) - Thermostat software by mhogottem
 
-                                       [Return to Top](#Smart Thermostat)
+                                                                                                 * [Return to Top](#smart_thermostat)
 
 ## Built With
 
@@ -30,11 +30,11 @@ Table of Contents
 ![BuckConvertor](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/buckconvertor.jpg)
 ![Relay](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/relays.jpg)
 
-                                      [Return to Top](#Smart Thermostat)
+                                                                                                * [Return to Top](#smart_thermostat)
 Acknowledgments
 ---------------
 
 * Hat tip to anyone who's code was used
 * Inspiration
 
-                                      [Return to Top](#Smart Thermostat) 
+                                                                                                * [Return to Top](#smart_thermostat)
