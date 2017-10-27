@@ -43,6 +43,7 @@ Table of Contents
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* Great Folks Willing to Help with Home Assistant [Home Assistant Chat on Discord](https://discordapp.com/invite/c5DvZ4e) 
+* Great Folks Willing to Help with Home Assistant Live Chat [Home Assistant Chat on Discord](https://discordapp.com/invite/c5DvZ4e) 
+* Also Folks on the Forum [Home Assistant Forums](https://community.home-assistant.io/)
 
    * [Return to Top](#smart-thermostat)
