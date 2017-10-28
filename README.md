@@ -36,7 +36,7 @@ Table of Contents
 ![Recitifier](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/recitifier.jpg)
 ![BuckConvertor](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/buckconvertor.jpg)
 ![Relay](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/relays.jpg)
-![TempProbe](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/ds18b20.jpg)
+![TempProbe](https://github.com/Vasiley/Diy_Thermostat_with_Homeassistant/blob/master/www/tempprobe.jpg)
 
    * [Return to Top](#smart-thermostat)
 
