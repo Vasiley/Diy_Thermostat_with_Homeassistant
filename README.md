@@ -1,6 +1,12 @@
 # Smart Thermostat
 
-Diy Thermostat with Home Assistaant for Under $70 This is a overview Please see wiki link below for more details
+Diy Thermostat with Home Assistaant for Under $70 Out of the box solutions are expensive and thought we would add this to have complete control. With Home Assistant you can have automations that turn off when you leave home, set temp lower for sleeping and then a normal temp for daytime. This is a overview Please see wiki link below for more details
+
+##Skill Level
+
+ * Intermediate
+ * Soldering Required
+ * Modifying project box of your choice  
 
 Table of Contents
 -----------------
